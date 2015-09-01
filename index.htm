@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>SuperMAG Slider Demo</title>
+        
+        <!-- jQuery smoothness theme -->
+        <link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+        
+        <!-- Slider specific styles : Include this -->
+        <link href="supermag-slider.css" rel="stylesheet">
+        
+        <!-- Demo page specific styles : not needed -->
+        <style>
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                font-family: sans-serif;
+                font-size: 14px;
+                line-height: 1.5;
+                background: #999;
+            }
+            #wrapper {
+                width: 75%;
+                height: 100%;
+                margin: 0 auto;
+                padding: 15px;
+                text-align: left;
+                background: #efefef;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="wrapper">
+            <!-- INTRODUCTION : NOT PART OF THE ACTUAL SLIDER -->
+            <h1>SuperMAG Slider Demo</h1>
+            <ul>
+                <li>This page does not use Bootstrap or any other custom styles other than those in place for the slider.</li>
+                <li>It uses jQuery and jQuery UI.</li>
+                <li>The CSS and jQuery/Javascript that makes the slider work is broken out into separate files.</li>
+                <li>This demo is not designed to use AJAX, but can be modified to do so.</li>
+                <li>Styles in the header of this file is not necessary for the functionality of the slider.</li>
+                <li>All text and images are added manually and statically in the source code of this file.</li>
+                <li>The selected value is inserted into a hidden <code>input</code> tag.</li>
+                <li><code>input</code> tag is visible for the purposes of this demo.</li>
+                <li>Documentation for the slider can be found at <a href="http://api.jqueryui.com/slider/" targer="_blank">http://api.jqueryui.com/slider/</a></li>
+                <li>The slider will start either at 0 or wherever the input value is at. For example, the input below is set to a $50 kick in. <code>input value="50"</code></li>
+            </ul>
+            <div>
+                <label for="amount_extra">Selected Value: </label> <input type="text" name="amount_extra" id="amount_extra" value="50" readonly>
+            </div>
+            <hr>
+            
+            <!-- SLIDER CODE BEGINS HERE -->
+            <div id="supermag-slider"> <!-- container box -->
+                <!-- Vertical slider container -->
+                <div id="slider-wrapper">
+                    <div id="vertical-slider"></div>
+                    <div id="slider-marks"></div>
+                </div>
+                
+                <!-- Information to display on the right when the value of the slider is changed -->
+                <div id="selection-display">
+                    <div id="no-thanks">No Thanks</div>
+                    <div id="ribbon">+ $5 : Ribbon</div>
+                    <div id="button">+ $10 : Button</div>
+                    <div id="shirt">+ $20 : Shirt</div>
+                    <div id="guitar-keychain">+ $40 : MAGFest 2016 Guitar Keychain<br><img src="http://magfest.org/sites/default/files/keychainsample.png"></div>
+                    <div id="early-supporter">+ $50 : Early Supporter</div>
+                    <div id="supporter">+ $80 : Supporter Package</div>
+                    <div id="battery-pack">+ $100 : Custom Battery Pack</div>
+                    <div id="season-pass">+ $160 : Season Pass</div>
+                    <div id="canvas-art-print">+ $250 : Canvas MAGFest 2016 Artwork Print<br><img src="http://magfest.org/sites/default/files/canvassample.png"></div>
+                    <div id="decorative-air-guitar">+ $500 : MAGFest 2016 Decorative Air Guitar</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Include jQuery -->
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <!-- Include jQuery UI -->
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <!-- Slider specific Javascript : Include this -->
+        <script src="supermag-slider.js"></script>
+    </body>
+</html>

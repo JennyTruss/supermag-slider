@@ -1,0 +1,59 @@
+#supermag-slider {
+	width: 100%;
+    margin: 15px auto;
+    padding: 0;
+    display: table;
+}
+
+#supermag-slider > div {
+	padding: 15px;
+    margin: 0 15px;
+    float: left;
+    display: table-cell;
+}
+
+#slider-wrapper > div {
+    display: block;
+    float: left;
+    height: 200px;
+}
+
+#slider-marks {
+	margin-left: 5px;
+}
+
+#slider-marks > div {
+    margin-top: -.5em;
+    margin-bottom: .4em;
+}
+
+#vertical-slider {
+	height: 100%;
+    width: 10px;
+    border-radius: 10px;
+}
+
+#vertical-slider .ui-slider-handle {
+    width: 2em;
+    height: 2em;
+    left: -.4em;
+	background: none;
+    border: none;
+    background-image: url(guitar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.ui-slider-handle:focus {
+	background: none;
+    border: none;
+    box-shadow: none;
+}
+
+#vertical-slider #slider-fill {
+	display: block;
+    width: 100%;
+    min-height: 1px;
+    background: #333;
+    border-radius: 10px;
+}
